@@ -16,8 +16,6 @@ public class RedisAccessor {
 	static volatile HashMap<Integer, Integer> expireMap = new HashMap<>();
 
 	static JedisPools pools;
-	static int POOL_NUM;
-
 	static {
 		Properties p = Conf.load("Redis");
 
