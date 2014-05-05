@@ -1,4 +1,3 @@
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -66,5 +65,9 @@ public class RedisAccessor {
 	@Deprecated
 	public static void invoke(int poolId, Invocable invocable) {
 		pools.invoke(poolId, invocable);
+	}
+
+	private JedisPools newPools(JedisConfig jcfg){
+		return null;
 	}
 }
